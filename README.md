@@ -22,7 +22,7 @@ The **NGO Old Age Home Management App** is a React Native mobile application des
 This application replaces manual record-keeping with a structured digital system for:
 
 - Resident profiles  
-- Attendance tracking  
+- Attendance trackin
 - Medical logs  
 - Emergency contact management  
 
