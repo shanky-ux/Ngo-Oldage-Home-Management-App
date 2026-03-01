@@ -156,7 +156,7 @@ Stores and manages medical history and prescriptions.
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Ngo-Oldage-Home-Management-App.git
+git clone https://github.com/shanky-ux/Ngo-Oldage-Home-Management-App.git
 cd Ngo-Oldage-Home-Management-App
 ```
 
