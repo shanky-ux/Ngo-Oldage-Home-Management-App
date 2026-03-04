@@ -71,38 +71,58 @@ This app provides a centralized digital solution.
 
 ## 🏗️ System Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     NGO MANAGEMENT APP                          │
-│                   System Architecture View                      │
-└─────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    USER([👤 NGO Staff / Admin]) --> APP
 
-  ┌──────────────────────────────────────────────────────────┐
-  │                 📱 PRESENTATION LAYER                    │
-  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐   │
-  │  │  Add     │ │Resident  │ │Attendance│ │ Medical  │   │
-  │  │Resident  │ │  List    │ │ Screen   │ │   Log    │   │
-  │  │ Screen   │ │ Screen   │ │          │ │  Screen  │   │
-  │  └────┬─────┘ └────┬─────┘ └────┬─────┘ └────┬─────┘   │
-  └───────┼────────────┼────────────┼─────────────┼─────────┘
-          │            │            │             │
-  ┌───────▼────────────▼────────────▼─────────────▼─────────┐
-  │                 🧭 NAVIGATION LAYER                      │
-  │          React Navigation — Stack & Tab Router           │
-  └──────────────────────────┬──────────────────────────────┘
-                             │
-  ┌──────────────────────────▼──────────────────────────────┐
-  │                   📦 DATA LAYER                          │
-  │   Local State (useState / useContext)                    │
-  │   ┌────────────────────────────────────────────────┐    │
-  │   │   AsyncStorage  │  TypeScript Models  │ Hooks  │    │
-  │   └────────────────────────────────────────────────┘    │
-  └──────────────────────────┬──────────────────────────────┘
-                             │  (Planned)
-  ┌──────────────────────────▼──────────────────────────────┐
-  │               ☁️ BACKEND LAYER  (Upcoming)               │
-  │         Firebase / Node.js + REST API + Auth             │
-  └─────────────────────────────────────────────────────────┘
+    subgraph APP["📱 PRESENTATION LAYER — React Native Screens"]
+        S1[AddResidentScreen]
+        S2[ResidentListScreen]
+        S3[ResidentProfileScreen]
+        S4[AttendanceScreen]
+        S5[MedicalLogScreen]
+    end
+
+    S1 & S2 & S3 & S4 & S5 --> NAV
+
+    subgraph NAV["🧭 NAVIGATION LAYER"]
+        N1[Stack Navigator]
+        N2[Tab Navigator]
+        N1 <--> N2
+    end
+
+    NAV --> STATE
+
+    subgraph STATE["📦 DATA LAYER — Local State Management"]
+        ST1[useState / useContext]
+        ST2[Custom Hooks]
+        ST3[TypeScript Models & Schemas]
+        ST1 --- ST2
+        ST2 --- ST3
+    end
+
+    STATE --> STORE
+
+    subgraph STORE["💾 LOCAL STORAGE"]
+        AS[(AsyncStorage)]
+    end
+
+    STORE -->|Planned Integration| BACKEND
+
+    subgraph BACKEND["☁️ BACKEND LAYER — Upcoming"]
+        B1[Firebase Auth]
+        B2[Firestore Database]
+        B3[Node.js REST API]
+        B1 --- B2
+        B2 --- B3
+    end
+
+    style APP fill:#0f2027,color:#fff,stroke:#00C9A7
+    style NAV fill:#162535,color:#fff,stroke:#00C9A7
+    style STATE fill:#1a2f3a,color:#fff,stroke:#00C9A7
+    style STORE fill:#203a43,color:#fff,stroke:#00C9A7
+    style BACKEND fill:#2c5364,color:#fff,stroke:#00C9A7,stroke-dasharray: 6 3
+    style USER fill:#00C9A7,color:#000
 ```
 
 ---
