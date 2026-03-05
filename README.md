@@ -22,7 +22,7 @@ It replaces manual registers with a structured and scalable digital system.
 
 ## 🚀 Current Development Status
 
-This project is actively being improved with:....
+This project is actively being improved with:
 - Code refactoring
 - UI improvements
 - Architecture enhancements
