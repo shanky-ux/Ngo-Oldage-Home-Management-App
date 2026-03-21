@@ -167,7 +167,7 @@ flowchart TD
 
 ---
 
-## 🌐 Request Lifecycle
+## 🌐 Request Lifecycles
 
 ```mermaid
 sequenceDiagram
