@@ -13,7 +13,7 @@
 
 ---
 
-## 📌 Overview
+## 📌 Overviews
 
 The **NGO Old Age Home Management App** is a React Native mobile application designed to digitize and streamline resident management in NGOs and old age homes.
 It replaces manual registers with a structured and scalable digital system.
