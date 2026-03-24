@@ -32,7 +32,7 @@ This project is actively being improved with:
 
 ---
 
-## 🎯 Problem Statement
+## 🎯 Problem Statements
 
 Many NGOs still rely on:
 - Paper-based records  
