@@ -2,7 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=NGO%20Old%20Age%20Home%20Management%20App&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
 <p align="center">
-  <b>📱 Digitizing Resident Management for NGOs & Old Age Homes</b>
+  <b>📱 Digitizing Resident Management for NGOs & Old Age Home</b>
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-Mobile%20App-61DAFB?style=for-the-badge&logo=react"/>
