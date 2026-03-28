@@ -24,7 +24,7 @@ It replaces manual registers with a structured and scalable digital system.
 
 This project is actively being improved with:
 - Code refactoring
-- UI improvements
+- UI improvement
 - Architecture enhancements
 - Future backend integration planning
 
