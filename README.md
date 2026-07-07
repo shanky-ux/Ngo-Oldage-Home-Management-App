@@ -248,7 +248,7 @@ flowchart LR
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stacks
 
 - React Native  
 - TypeScript  
