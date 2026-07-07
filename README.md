@@ -48,7 +48,7 @@ This app provides a centralized digital solution.
 
 ---
 
-## ✨ Key Feature
+## ✨ Key Features
 
 - 👤 Add & Manage Resident Profiles  
 - 📅 Attendance Tracking  
